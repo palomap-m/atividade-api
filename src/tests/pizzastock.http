@@ -1,0 +1,82 @@
+@url = http://localhost:8080
+@token = SEU_TOKEN_AQUI
+
+### =====================
+### PIZZARIAS
+### =====================
+
+POST {{url}}/pizzarias
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Pizzaria Bella Napoli",
+    "cnpj": "12.345.678/0001-90",
+    "endereco": "Rua das Flores, 100 - São Paulo/SP"
+}
+
+###
+GET {{url}}/pizzarias
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/pizzarias/1
+Authorization: Bearer {{token}}
+
+###
+PUT {{url}}/pizzarias/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Pizzaria Bella Napoli Atualizada",
+    "cnpj": "12.345.678/0001-90",
+    "endereco": "Rua das Flores, 200 - São Paulo/SP"
+}
+
+###
+DELETE {{url}}/pizzarias/1
+Authorization: Bearer {{token}}
+
+### =====================
+### INGREDIENTES
+### =====================
+
+POST {{url}}/ingredientes
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Farinha de Trigo",
+    "quantidadeEstoque": 50.0,
+    "unidadeMedida": "kg",
+    "pizzariaId": 1
+}
+
+###
+GET {{url}}/ingredientes
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/ingredientes?pizzariaId=1
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/ingredientes/1
+Authorization: Bearer {{token}}
+
+###
+PUT {{url}}/ingredientes/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Farinha de Trigo Integral",
+    "quantidadeEstoque": 30.0,
+    "unidadeMedida": "kg",
+    "pizzariaId": 1
+}
+
+###
+DELETE {{url}}/ingredientes/1
+Authorization: Bearer {{token}}
