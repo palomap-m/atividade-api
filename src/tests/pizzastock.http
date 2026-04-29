@@ -1,18 +1,15 @@
 @url = http://localhost:8080
-@token = SEU_TOKEN_AQUI
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQaXp6YVN0b2NrIEFQSSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzc3NDUwODgzfQ.gMm2w4QiWLqI6OQ6AiP_qOVCvkrgaZP7Zufy7mdjxXc
 
-### =====================
-### PIZZARIAS
-### =====================
-
+### 
 POST {{url}}/pizzarias
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-    "nome": "Pizzaria Bella Napoli",
-    "cnpj": "12.345.678/0001-90",
-    "endereco": "Rua das Flores, 100 - São Paulo/SP"
+    "nome": "Pizzaria Pompeia",
+    "cnpj": "21.345.678/0001-90",
+    "endereco": "Rua Fatec, 100 - São Paulo/SP"
 }
 
 ###
@@ -38,10 +35,7 @@ Content-Type: application/json
 DELETE {{url}}/pizzarias/1
 Authorization: Bearer {{token}}
 
-### =====================
-### INGREDIENTES
-### =====================
-
+### 
 POST {{url}}/ingredientes
 Authorization: Bearer {{token}}
 Content-Type: application/json
