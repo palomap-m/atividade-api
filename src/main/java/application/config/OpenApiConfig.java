@@ -19,7 +19,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
         description = "API para gerenciamento de estoque de ingredientes de pizzarias",
         contact = @Contact(
             name = "Ana Luíza",
-            email = "seu.email@email.com"
+            email = "fatecwendy@gmail.com"
         ),
         license = @License(
             name = "MIT",
