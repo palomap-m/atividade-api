@@ -1,14 +1,13 @@
 @url = http://localhost:8080
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQaXp6YVN0b2NrIEFQSSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzc3NDUwODgzfQ.gMm2w4QiWLqI6OQ6AiP_qOVCvkrgaZP7Zufy7mdjxXc
-
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJQaXp6YVN0b2NrIEFQSSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzc3NTAyNDQwfQ.062vn2NuRTTG7_55O1NW6R6fXN9scyVqcRFmsze8ZwA
 ### 
 POST {{url}}/pizzarias
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-    "nome": "Pizzaria Pompeia",
-    "cnpj": "21.345.678/0001-90",
+    "nome": "Pizzaria Pompeiana",
+    "cnpj": "41.345.678/0001-90",
     "endereco": "Rua Fatec, 100 - São Paulo/SP"
 }
 
